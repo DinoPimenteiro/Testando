@@ -1,0 +1,87 @@
+Microsoft Windows [versão 10.0.19045.5011]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Alunos>git clone https://github.com/DinoPimenteiro/Testando
+Cloning into 'Testando'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+C:\Users\Alunos>cd Testando
+
+C:\Users\Alunos\Testando>echo %poing%
+%poing%
+
+C:\Users\Alunos\Testando>ipconfig
+
+Configuração de IP do Windows
+
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::c190:b65f:3396:451a%16
+   Endereço IPv4. . . . . . . .  . . . . . . . : 10.67.168.114
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.254.0
+   Gateway Padrão. . . . . . . . . . . . . . . : 10.67.168.1
+
+Adaptador Ethernet Ethernet 2:
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::f23c:9b2d:ce75:d673%10
+   Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.56.1
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   Gateway Padrão. . . . . . . . . . . . . . . :
+
+Adaptador Ethernet vEthernet (Default Switch):
+
+   Sufixo DNS específico de conexão. . . . . . :
+   Endereço IPv6 de link local . . . . . . . . : fe80::7fa3:5527:94d0:f03e%31
+   Endereço IPv4. . . . . . . .  . . . . . . . : 172.25.80.1
+   Máscara de Sub-rede . . . . . . . . . . . . : 255.255.240.0
+   Gateway Padrão. . . . . . . . . . . . . . . :
+
+C:\Users\Alunos\Testando>ipconfig findstr "IPv4" > ip_address.txt
+
+C:\Users\Alunos\Testando>notepad ip_address.txt
+
+C:\Users\Alunos\Testando>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ip_address.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Alunos\Testando>git commit -m "adiciona arquivos com hostname e IP"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Alunos@L1-13.(none)')
+
+C:\Users\Alunos\Testando>git config --global user.email "gabrielwilliam234@gmail.com"
+
+C:\Users\Alunos\Testando>git config --global user.name "Gabriel"
+
+C:\Users\Alunos\Testando>git commit -m
+error: switch `m' requires a value
+
+C:\Users\Alunos\Testando>git config --global user.email
+gabrielwilliam234@gmail.com
+
+C:\Users\Alunos\Testando>git config --global user.name
+Gabriel
+
+C:\Users\Alunos\Testando>
